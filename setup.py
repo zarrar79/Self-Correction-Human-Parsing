@@ -1,14 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="self_correction_human_parsing",
+    name="schp",
     version="0.1",
-    packages=find_packages(),
+    description="Self-Correction for Human Parsing",
+    author="Peike Li",
+    url="https://github.com/PeikeLi/Self-Correction-Human-Parsing",
+    packages=find_packages(include=["schp", "schp.*"]),
     install_requires=[
         "torch",
         "torchvision",
         "opencv-python",
-        "pillow",
+        "Pillow",
         "scipy",
     ],
+    python_requires=">=3.6",
 )
